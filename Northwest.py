@@ -1,5 +1,5 @@
 import streamlit as st  
-import SOUTHEAST 
+import NORTHWEST 
 st.title('NBA數據查詢系統')
 st.sidebar.header('選擇球隊及數據')
 option = st.sidebar.selectbox( '選擇分組？', ['ATLANTIC', '中央組', 'SOUTHEAST', 'NORTHWEST','太平洋組','西南組'])
