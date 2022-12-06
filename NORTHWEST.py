@@ -30,7 +30,7 @@ def MinnesotaTimberwolves():
   col1, col2= st.columns(2)
   col1.metric("聯盟冠軍🏆", "0  次")
   col2.metric("分組冠軍🏆", "0  次")   
-def OklahomaCityThunder():
+def OklahomCityThunder():
   col1, col2 = st.columns(2)
   with col1:
     image = Image.open('Oklahoma City Thunder.png')
