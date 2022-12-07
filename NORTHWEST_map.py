@@ -45,7 +45,7 @@ def OklahomCityThunder_map():
     folium_static(ChesapeakeEnergyArena)
     col1, col2 = st.columns(2)
     with col1:          
-        image = Image.open('Chesapeake Energy Arena.jpeg')       
+        image = Image.open('Chesapeake Energy Arena .jpeg')       
         st.image(image)
     with col2:
         image1 =Image.open('Chesapeake Energy Arena1.jpeg')
