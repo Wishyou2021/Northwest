@@ -2,84 +2,84 @@ import streamlit as st
 import folium 
 from PIL import Image  
 from streamlit_folium import folium_static 
-def AtlantaHawks_map():
-    st.header('主場:州立農業球館')
-    StateFarmArena= folium.Map(location=[33.75737827997708, -84.39633513151331], zoom_start=16)
+def DenverNuggets_map():
+    st.header('主場:波爾體育館')
+    BallArena= folium.Map(location=[39.749843021630504, -105.00794625648932], zoom_start=16)
         # add marker for Liberty Bell
-    tooltip = "州立農業球館"
-    folium.Marker([33.75737827997708, -84.39633513151331], popup="州立農業球館", tooltip=tooltip
-    ).add_to(StateFarmArena)
-    folium_static(StateFarmArena)
+    tooltip = "波爾體育館"
+    folium.Marker([39.749843021630504, -105.00794625648932], popup="波爾體育館", tooltip=tooltip
+    ).add_to(BallArena)
+    folium_static(BallArena)
     col1, col2 = st.columns(2)
     with col1:
-        image = Image.open('State Farm Arena.jpeg')
+        image = Image.open('Ball Arena .jpeg')
         st.image(image)        
     with col2:        
-        image1 = Image.open('State Farm Arena1.jpeg')
+        image1 = Image.open('Ball Arena 1.jpeg')
         st.image(image1)
-    st.write('地址：1 State Farm Dr, Atlanta, GA 30303美國,觀眾席數：18,371席')
+    st.write('地址：1000 Chopper Cir, Denver, CO 80204美國,觀眾席數：19,155席')
   
-def CharlotteHornets_map():
-    st.header('主場:光譜中心')
-    SpectrumCenter= folium.Map(location=[35.22528408738218, -80.83934793137779], zoom_start=16)
+def MinnesotaTimberwolves_map():
+    st.header('主場:標靶中心')
+    TargetCenter= folium.Map(location=[44.98006909117457, -93.2760948230289], zoom_start=16)
         # add marker for Liberty Bell
-    tooltip = "光譜中心"
-    folium.Marker([35.22528408738218, -80.83934793137779], popup="光譜中心", tooltip=tooltip
-    ).add_to(SpectrumCenter)
-    folium_static(SpectrumCenter)
+    tooltip = "標靶中心"
+    folium.Marker([44.98006909117457, -93.2760948230289], popup="標靶中心", tooltip=tooltip
+    ).add_to(TargetCenter)
+    folium_static(TargetCenter)
     col1, col2 = st.columns(2)
     with col1:          
-        image = Image.open('Spectrum Center.jpeg')       
+        image = Image.open('Target Center.jpeg')       
         st.image(image)
     with col2:
-        image1 =Image.open('Spectrum Center1.jpeg')
+        image1 =Image.open('Target Center1.jpeg')
         st.image(image1)
-    st.write('地址：333 E Trade St, Charlotte, NC 28202美國,觀眾席數：20,200席')
-def MiamiHeat_map():
-    st.header('主場:FTX球館')
-    FTXArena= folium.Map(location=[25.781565618522425, -80.18702264697642], zoom_start=16)
+    st.write('地址：600 N 1st Ave, Minneapolis, MN 55403美國,觀眾席數：18,798席')
+def OklahomCityThunder_map():
+    st.header('主場:切薩皮克能源球館')
+    ChesapeakeEnergyArena= folium.Map(location=[35.46412251164774, -97.51519977239266], zoom_start=16)
         # add marker for Liberty Bell
-    tooltip = "FTX球館"
-    folium.Marker([25.781565618522425, -80.18702264697642], popup="FTX球館", tooltip=tooltip
-    ).add_to(FTXArena)
-    folium_static(FTXArena)
+    tooltip = "切薩皮克能源球館"
+    folium.Marker([35.46412251164774, -97.51519977239266], popup="切薩皮克能源球館", tooltip=tooltip
+    ).add_to(ChesapeakeEnergyArena)
+    folium_static(ChesapeakeEnergyArena)
     col1, col2 = st.columns(2)
     with col1:          
-        image = Image.open('FTX Arena.jpeg')       
+        image = Image.open('Chesapeake Energy Arena.jpeg')       
         st.image(image)
     with col2:
-        image1 =Image.open('FTX Arena1.jpg')
+        image1 =Image.open('Chesapeake Energy Arena1.jpeg')
         st.image(image1)
-    st.write('地址：601 Biscayne Blvd, Miami, FL 33132美國,觀眾席數：19,600席')
-def OrlandoMagic_map():
-    st.header('主場:安麗中心')
-    AmwayCenter= folium.Map(location=[28.539343909610295, -81.38387496040187], zoom_start=16)
+    st.write('地址：100 W Reno Ave, Oklahoma City, OK 73102美國,觀眾席數：18,203席')
+def PortlandTrailBlazers_map():
+    st.header('主場:摩達中心')
+    ModaCenter= folium.Map(location=[45.53222514229469, -122.6669282525212], zoom_start=16)
         # add marker for Liberty Bell
-    tooltip = "安麗中心"
-    folium.Marker([28.539343909610295, -81.38387496040187], popup="安麗中心", tooltip=tooltip
-    ).add_to(AmwayCenter)
-    folium_static(AmwayCenter)
+    tooltip = "摩達中心"
+    folium.Marker([45.53222514229469, -122.6669282525212], popup="摩達中心", tooltip=tooltip
+    ).add_to(ModaCenter)
+    folium_static(ModaCenter)
     col1, col2 = st.columns(2)
     with col1:          
-        image = Image.open('Amway Center.jpeg')       
+        image = Image.open('Moda Center.jpeg')       
         st.image(image)
     with col2:
-        image1 =Image.open('Amway Center1.jpeg')
+        image1 =Image.open('Moda Center1.jpeg')
         st.image(image1)
-    st.write('地址：400 W Church St Suite 200, Orlando, FL 32801美國,觀眾席數：18,846席')
-def WashingtonWizards_map():
-    st.header('主場:第一資本競技館')
-    CapitalOneArena= folium.Map(location=[38.89830942692672, -77.02088898904876], zoom_start=16)
+    st.write('地址：1 N Center Ct St, Portland, OR 97227美國,觀眾席數：20,630席')
+def UtahJazz_map():
+    st.header('主場:生活智能家居球館')
+    VivintArena= folium.Map(location=[40.76950185004792, -111.9012591931141], zoom_start=16)
         # add marker for Liberty Bell
-    tooltip = "第一資本競技館"
-    folium.Marker([38.89830942692672, -77.02088898904876], popup="第一資本競技館", tooltip=tooltip
-    ).add_to(CapitalOneArena)
-    folium_static(CapitalOneArena)
+    tooltip = "生活智能家居球館"
+    folium.Marker([40.76950185004792, -111.9012591931141], popup="生活智能家居球館", tooltip=tooltip
+    ).add_to(VivintArena)
+    folium_static(VivintArena)
     col1, col2 = st.columns(2)
     with col1:          
-        image = Image.open('Capital One Arena.jpeg')       
+        image = Image.open('Vivint Arena.jpeg')       
         st.image(image)
     with col2:
-        image1 =Image.open('Capital One Arena1.jpeg')
+        image1 =Image.open('Vivint Arena1.jpeg')
         st.image(image1)
-    st.write('地址：601 F St NW, Washington, DC 20004美國,觀眾席數：20,356席')
+    st.write('地址：301 S Temple, Salt Lake City, UT 84101美國,觀眾席數：20,000席')
